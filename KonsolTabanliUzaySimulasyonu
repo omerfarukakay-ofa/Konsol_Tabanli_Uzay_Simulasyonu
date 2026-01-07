@@ -30,8 +30,8 @@ int main() {
     char bilim_insani[100];
     int secim;
 
-    // Gezegenlerin yerçekim ivmeleri
-    // Sirasiyla: Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs, Neptün
+    // Gezegenlerin yerÃ§ekim ivmeleri
+    // Sirasiyla: MerkÃ¼r, VenÃ¼s, DÃ¼nya, Mars, JÃ¼piter, SatÃ¼rn, UranÃ¼s, NeptÃ¼n
     double g_ivmeleri[GEZEGEN_SAYISI] = {3.70, 8.87, 9.80, 3.71, 24.79, 10.44, 8.69, 11.15};
 
     printf("************************************************\n");
@@ -61,7 +61,7 @@ int main() {
             break;
         }
 
-        // Pointer ile diziye erisim için dizinin baslangiç adresi
+        // Pointer ile diziye erisim iÃ§in dizinin baslangiÃ§ adresi
         switch (secim) {
             case 1: serbest_dusme(g_ivmeleri, (char **)gezegen_isimleri); break;
             case 2: yukari_atis(g_ivmeleri, (char **)gezegen_isimleri); break;
@@ -168,7 +168,7 @@ void potansiyel_enerji(double *g_ptr, char **p_isim) {
     }
 }
 
-// 5. Hidrostatik Basinç: P = rho * g * h
+// 5. Hidrostatik BasinÃ§: P = rho * g * h
 void hidrostatik_basinc(double *g_ptr, char **p_isim) {
     printf("\n--- 5. Hidrostatik Basinc Deneyi ---\n");
     double rho = girdi_al_kontrol("Sivinin yogunlugu (kg/m^3): ");
